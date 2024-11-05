@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabrina Victoria</title>
+    <link rel="stylesheet" href="estilos.css"> <!-- Link para o CSS externo -->
+</head>
+<body>
+
+    <h1>Bem-vindo ao site de Sabrina Victoria</h1>
+
+    <!-- Jogo 1: Adivinhe a idade -->
+    <section id="jogo-idade">
+        <h2>Tente adivinhar a minha idade!</h2>
+        <input type="number" id="idade-input" placeholder="Digite uma idade" min="0">
+        <button onclick="verificarIdade()">Verificar</button>
+        <p id="resultado-idade"></p>
+    </section>
+
+    <!-- Objetivos -->
+    <section id="objetivos">
+        <h2>Meus Objetivos</h2>
+        <ul>
+            <li>Profissionalizar-me no desenvolvimento de sistemas</li>
+            <li>Estudar e aprofundar em design para programação, marketing e edição de vídeos</li>
+            <li>Cursando faculdade de Análise e Desenvolvimento de Sistemas (ADS)</li>
+        </ul>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <button id="mostrar-contato">Mostrar Contato</button>
+        <div id="contato-info" style="display: none;">
+            <ul class="lista-contato">
+                <li>Telefone: <a href="tel:+5511961222449" class="contato">+55 (11) 96122-2449</a></li>
+                <li>E-mail: <a href="mailto:v1c.saahaas@gmail.com" class="contato">v1c.saahaas@gmail.com</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Jogo 2: Adivinhe o ano de nascimento -->
+    <section id="jogo-ano">
+        <h2>Em que ano eu nasci?</h2>
+        <input type="number" id="ano-input" placeholder="Digite um ano">
+        <button onclick="verificarAno()">Verificar</button>
+        <p id="resultado-ano"></p>
+    </section>
+
+    <script src="script.js"></script> <!-- Link para o JavaScript externo -->
+</body>
+</html>
